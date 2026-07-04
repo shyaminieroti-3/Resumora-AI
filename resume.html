@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume Analyzer | Resumora AI</title>
+
+<link rel="stylesheet" href="css/resume.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📄 AI Resume Analyzer</h1>
+
+<p>
+Upload your resume and get an AI-powered analysis.
+</p>
+
+<div class="upload-box">
+
+<input type="file" id="resumeFile" accept=".pdf,.doc,.docx">
+
+<button onclick="analyzeResume()">
+
+Analyze Resume
+
+</button>
+
+</div>
+
+<div class="result">
+
+<section class="result-section">
+
+    <h2>📊 Resume Analysis Report</h2>
+
+    <div class="result-cards">
+
+        <div class="card">
+            <h3>ATS Status</h3>
+            <p id="ats">Waiting...</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Engine</h3>
+            <p id="grammar">Gemini AI</p>
+        </div>
+
+        <div class="card">
+            <h3>Resume Status</h3>
+            <p id="skills">Ready</p>
+        </div>
+
+    </div>
+
+    <div id="analysisBox" class="analysis-box">
+        Upload your resume and click Analyze.
+    </div>
+
+</section>
+</div>
+
+<a href="dashboard.html" class="back-btn">
+
+← Back to Dashboard
+
+</a>
+
+</div>
+
+<script src="js/resume.js"></script>
+
+</body>
+
+</html>
